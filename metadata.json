@@ -1,0 +1,6 @@
+{
+  "name": "Kumpulan Fatwa DSN-MUI",
+  "description": "Aplikasi direktori dan eksplorasi kumpulan Fatwa DSN-MUI dengan pencarian cepat, filter kategori topik, penjelajah dalil Quran, Hadits, Kaidah Fiqih, dan ringkasan fatwa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
