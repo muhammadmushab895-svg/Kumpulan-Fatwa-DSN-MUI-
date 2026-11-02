@@ -5,7 +5,7 @@ import {
   Layers, 
   BookOpen, 
   Bookmark, 
-  FileSpreadsheet, 
+  Smartphone, 
   Sparkles,
   ArrowUp,
   RotateCcw,
@@ -25,7 +25,7 @@ import { CategoryFilter } from './components/CategoryFilter';
 import { FilterControls } from './components/FilterControls';
 import { FatwaCard } from './components/FatwaCard';
 import { FatwaModal } from './components/FatwaModal';
-import { GoogleSheetsModal } from './components/GoogleSheetsModal';
+import { PwaInstallModal } from './components/PwaInstallModal';
 import { KamusAkadModal } from './components/KamusAkadModal';
 import { AboutModal } from './components/AboutModal';
 import { StatsBanner } from './components/StatsBanner';
@@ -49,7 +49,37 @@ export default function App() {
 
   // Modals state
   const [selectedFatwa, setSelectedFatwa] = useState<FatwaItem | null>(null);
-  const [isSheetsOpen, setIsSheetsOpen] = useState(false);
+  const [isPwaModalOpen, setIsPwaModalOpen] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [isPwaInstalled, setIsPwaInstalled] = useState(false);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setIsPwaInstalled(true);
+    }
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  const handleInstallPwa = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const choiceResult = await deferredPrompt.userChoice;
+      if (choiceResult && choiceResult.outcome === 'accepted') {
+        setIsPwaInstalled(true);
+      }
+      setDeferredPrompt(null);
+    }
+  };
   const [isGlossaryOpen, setIsGlossaryOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isHtmlModalOpen, setIsHtmlModalOpen] = useState(false);
@@ -244,7 +274,7 @@ export default function App() {
       <Navbar
         favoriteCount={favorites.length}
         onOpenFavorites={() => setFilters((prev) => ({ ...prev, favoriteOnly: !prev.favoriteOnly }))}
-        onOpenSheets={() => setIsSheetsOpen(true)}
+        onOpenPwa={() => setIsPwaModalOpen(true)}
         onOpenGlossary={() => setIsGlossaryOpen(true)}
         onOpenAbout={() => setIsAboutOpen(true)}
         onOpenHtmlApp={() => setIsHtmlModalOpen(true)}
@@ -276,7 +306,7 @@ export default function App() {
 
             {/* Description */}
             <p className="mt-3.5 text-sm sm:text-base text-emerald-100/80 leading-relaxed max-w-2xl mx-auto font-normal">
-              Eksplorasi seluruh ketetapan fatwa perbankan, pasar modal, fintech, dan muamalah kontemporer Indonesia dilengkapi teks dalil Al-Qur'an, Hadits, kaidah fiqhiyyah, serta integrasi Google Sheets.
+              Eksplorasi seluruh ketetapan fatwa perbankan, pasar modal, fintech, dan muamalah kontemporer Indonesia dilengkapi teks dalil Al-Qur'an, Hadits, kaidah fiqhiyyah, serta dukungan PWA Android & akses offline.
             </p>
           </div>
 
@@ -404,10 +434,12 @@ export default function App() {
         hasNext={currentModalIndex >= 0 && currentModalIndex < filteredFatwas.length - 1}
       />
 
-      <GoogleSheetsModal
-        isOpen={isSheetsOpen}
-        onClose={() => setIsSheetsOpen(false)}
-        fatwaList={filteredFatwas}
+      <PwaInstallModal
+        isOpen={isPwaModalOpen}
+        onClose={() => setIsPwaModalOpen(false)}
+        onInstallPrompt={handleInstallPwa}
+        isInstallable={!!deferredPrompt}
+        isInstalled={isPwaInstalled}
       />
 
       <KamusAkadModal
@@ -459,10 +491,11 @@ export default function App() {
               Kamus Akad
             </button>
             <button
-              onClick={() => setIsSheetsOpen(true)}
-              className="hover:text-emerald-800 transition-colors font-bold text-teal-800"
+              onClick={() => setIsPwaModalOpen(true)}
+              className="hover:text-emerald-800 transition-colors font-bold text-emerald-800 inline-flex items-center gap-1.5"
             >
-              Ekspor Google Sheets
+              <Smartphone className="w-3.5 h-3.5" />
+              <span>Download PWA Android</span>
             </button>
             <button
               onClick={() => setIsAboutOpen(true)}

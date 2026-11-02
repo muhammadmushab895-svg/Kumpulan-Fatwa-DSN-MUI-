@@ -1,0 +1,40 @@
+{
+  "name": "Kumpulan Fatwa DSN-MUI",
+  "short_name": "Fatwa DSN",
+  "description": "Ensiklopedia & Direktori Lengkap 169 Fatwa Dewan Syariah Nasional MUI dengan Dalil Al-Qur'an, Hadits, Kaidah Fiqhiyyah, dan Terjemahan.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": [
+    "reference",
+    "books",
+    "education",
+    "finance"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ]
+}

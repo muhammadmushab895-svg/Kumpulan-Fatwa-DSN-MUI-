@@ -2,18 +2,18 @@ import React from 'react';
 import { 
   BookOpen, 
   Bookmark, 
-  FileSpreadsheet, 
+  Smartphone, 
   HelpCircle, 
-  Scale,
-  Sparkles,
-  FileCode,
-  Download
+  Scale, 
+  Sparkles, 
+  FileCode, 
+  Download 
 } from 'lucide-react';
 
 interface NavbarProps {
   favoriteCount: number;
   onOpenFavorites: () => void;
-  onOpenSheets: () => void;
+  onOpenPwa: () => void;
   onOpenGlossary: () => void;
   onOpenAbout: () => void;
   onOpenHtmlApp: () => void;
@@ -23,7 +23,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   favoriteCount,
   onOpenFavorites,
-  onOpenSheets,
+  onOpenPwa,
   onOpenGlossary,
   onOpenAbout,
   onOpenHtmlApp,
@@ -84,16 +84,19 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="hidden md:inline">Kamus Akad</span>
             </button>
 
-            {/* Google Sheets Export / Sync Button */}
+            {/* Download PWA Android Button */}
             <button
-              id="btn-nav-sheets"
-              onClick={onOpenSheets}
-              className="inline-flex items-center gap-1.5 px-3 py-2 text-xs sm:text-sm font-semibold text-teal-900 bg-teal-50 hover:bg-teal-100 rounded-xl transition-all border border-teal-200 shadow-2xs"
-              title="Ekspor & Buka di Google Sheets"
+              id="btn-nav-pwa"
+              onClick={onOpenPwa}
+              className="inline-flex items-center gap-1.5 px-3 py-2 text-xs sm:text-sm font-bold text-emerald-950 bg-gradient-to-r from-emerald-100 via-emerald-50 to-teal-100 hover:from-emerald-200 hover:to-teal-200 rounded-xl transition-all border border-emerald-300 shadow-2xs hover:shadow-xs"
+              title="Pasang / Download Aplikasi Android (PWA)"
             >
-              <FileSpreadsheet className="w-4 h-4 text-teal-700" />
-              <span className="hidden sm:inline">Google Sheets</span>
-              <span className="sm:hidden">Sheets</span>
+              <Smartphone className="w-4 h-4 text-emerald-700" />
+              <span className="hidden sm:inline">PWA Android</span>
+              <span className="sm:hidden">PWA</span>
+              <span className="hidden lg:inline-block text-[10px] uppercase tracking-wider bg-emerald-800 text-white px-1.5 py-0.5 rounded-md font-bold">
+                App
+              </span>
             </button>
 
             {/* Bookmarks Toggle */}

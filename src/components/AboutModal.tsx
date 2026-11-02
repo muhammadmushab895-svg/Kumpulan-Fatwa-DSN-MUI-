@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Scale, ShieldCheck, BookOpen, ExternalLink, Award, FileSpreadsheet } from 'lucide-react';
+import { X, Scale, ShieldCheck, BookOpen, ExternalLink, Award, Smartphone } from 'lucide-react';
 
 interface AboutModalProps {
   isOpen: boolean;
@@ -71,11 +71,11 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
 
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
               <h4 className="font-bold text-slate-900 text-xs uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                <FileSpreadsheet className="w-4 h-4 text-emerald-700" />
-                Integrasi Google Sheets & Tabular
+                <Smartphone className="w-4 h-4 text-emerald-700" />
+                Aplikasi PWA Android & Akses Offline
               </h4>
               <p className="text-xs text-slate-700 leading-relaxed">
-                Aplikasi ini dilengkapi fitur ekspor satu-klik langsung ke Google Sheets (CSV/TSV) untuk mempermudah akademisi, praktisi perbankan, dan pengkaji syariah.
+                Aplikasi ini mendukung Progressive Web App (PWA) sehingga dapat dipasang langsung di layar utama HP Android Anda serta dapat diakses 100% tanpa internet.
               </p>
             </div>
           </div>

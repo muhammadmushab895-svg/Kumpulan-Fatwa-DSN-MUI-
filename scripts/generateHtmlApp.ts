@@ -527,7 +527,7 @@ function generateHtml() {
       <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50 flex items-center justify-between">
         <div>
           <h3 class="text-base sm:text-lg font-bold text-slate-900">Ekspor Data Fatwa DSN-MUI</h3>
-          <p class="text-xs text-slate-500">Unduh data fatwa dalam format CSV, JSON, atau buka di Google Sheets</p>
+          <p class="text-xs text-slate-500">Unduh data fatwa dalam format CSV atau JSON</p>
         </div>
         <button onclick="closeExportModal()" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -536,7 +536,7 @@ function generateHtml() {
       <div class="p-4 sm:p-6 space-y-4 overflow-y-auto text-sm text-slate-700">
         
         <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
-          <h4 class="font-bold text-emerald-900 mb-1">Unduh Format CSV (Excel & Google Sheets)</h4>
+          <h4 class="font-bold text-emerald-900 mb-1">Unduh Format CSV (Excel & Spreadsheet)</h4>
           <p class="text-xs text-emerald-800 mb-3">File CSV ini berisi seluruh ${ALL_FATWA.length} fatwa (Nomor, Tahun, Kategori, Judul, Akad, Ringkasan) yang dapat langsung Anda buka di Microsoft Excel atau Google Sheets.</p>
           <button onclick="downloadCSV()" class="px-4 py-2 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 text-xs inline-flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -553,12 +553,12 @@ function generateHtml() {
           </button>
         </div>
 
-        <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-          <h4 class="font-bold text-blue-900 mb-1">Buka di Google Sheets</h4>
-          <p class="text-xs text-blue-800 mb-2">Cara mudah: 1. Unduh file CSV di atas, 2. Buka Google Sheets (sheets.new), 3. Pilih menu File > Impor > Upload file CSV yang telah diunduh.</p>
-          <a href="https://sheets.new" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 text-xs inline-flex items-center gap-2">
-            Buka Google Sheets Baru ↗
-          </a>
+        <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+          <h4 class="font-bold text-emerald-900 mb-1">Aplikasi Android (PWA)</h4>
+          <p class="text-xs text-emerald-800">Buka versi online di browser Google Chrome / Samsung Internet pada smartphone Android Anda, lalu pilih menu titik tiga (⋮) &gt; "Tambahkan ke Layar Utama" atau "Pasang Aplikasi" untuk memasang ke HP Anda.</p>
+
+
+
         </div>
 
       </div>

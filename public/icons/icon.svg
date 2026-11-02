@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#04392b" />
+      <stop offset="100%" stop-color="#02241b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle / Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Outer Decorative Islamic Star Ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldGrad)" stroke-width="8" />
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="6,6" stroke-opacity="0.7" />
+
+  <!-- Scale of Justice / Book Geometry -->
+  <!-- Top Crescent & Star -->
+  <path d="M256,95 C264,95 272,99 276,106 C268,107 261,114 261,123 C261,132 268,139 276,140 C272,147 264,151 256,151 C241,151 228,138 228,123 C228,108 241,95 256,95 Z" fill="url(#goldGrad)" />
+  <polygon points="274,117 277,125 285,125 279,130 281,138 274,133 267,138 269,130 263,125 271,125" fill="#fef08a" />
+
+  <!-- Scale Beam -->
+  <rect x="176" y="172" width="160" height="10" rx="5" fill="url(#goldGrad)" />
+  <circle cx="256" cy="177" r="14" fill="url(#goldGrad)" />
+  <circle cx="256" cy="177" r="6" fill="#064e3b" />
+
+  <!-- Scale Left Pan -->
+  <line x1="186" y1="182" x2="160" y2="235" stroke="url(#goldGrad)" stroke-width="3" />
+  <line x1="186" y1="182" x2="212" y2="235" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M150,235 C150,255 222,255 222,235 Z" fill="url(#goldGrad)" />
+
+  <!-- Scale Right Pan -->
+  <line x1="326" y1="182" x2="300" y2="235" stroke="url(#goldGrad)" stroke-width="3" />
+  <line x1="326" y1="182" x2="352" y2="235" stroke="url(#goldGrad)" stroke-width="3" />
+  <path d="M290,235 C290,255 362,255 362,235 Z" fill="url(#goldGrad)" />
+
+  <!-- Open Quran / Book at Bottom Center -->
+  <g transform="translate(136, 265)">
+    <!-- Book Shadow -->
+    <path d="M120,85 C70,60 20,70 0,80 L0,145 C20,135 70,125 120,150 C170,125 220,135 240,145 L240,80 C220,70 170,60 120,85 Z" fill="#021c15" opacity="0.6" />
+    
+    <!-- Left Page -->
+    <path d="M120,75 C70,50 20,60 5,70 L5,135 C20,125 70,115 120,140 Z" fill="#f8fafc" stroke="url(#goldGrad)" stroke-width="5" />
+    <line x1="25" y1="88" x2="105" y2="72" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="25" y1="103" x2="105" y2="87" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="25" y1="118" x2="105" y2="102" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Right Page -->
+    <path d="M120,75 C170,50 220,60 235,70 L235,135 C220,125 170,115 120,140 Z" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="5" />
+    <line x1="135" y1="72" x2="215" y2="88" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="135" y1="87" x2="215" y2="103" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+    <line x1="135" y1="102" x2="215" y2="118" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Spine -->
+    <line x1="120" y1="75" x2="120" y2="140" stroke="url(#goldGrad)" stroke-width="6" />
+    
+    <!-- Ribbon Marker -->
+    <path d="M120,140 L120,165 L128,157 L136,165 L136,138 Z" fill="#ef4444" />
+  </g>
+
+  <!-- Rehal / Book Stand Base -->
+  <polygon points="230,420 256,400 282,420 256,435" fill="url(#goldGrad)" />
+  <line x1="160" y1="435" x2="256" y2="400" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+  <line x1="352" y1="435" x2="256" y2="400" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+</svg>
