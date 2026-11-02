@@ -388,39 +388,48 @@ function generateHtml() {
   </footer>
 
   <!-- DETAIL MODAL -->
-  <div id="detail-modal" class="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs hidden flex items-center justify-center p-3 sm:p-4 md:p-6">
-    <div class="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden" id="detail-modal-container">
+  <div id="detail-modal" class="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs hidden flex items-center justify-center p-2 sm:p-4 md:p-6">
+    <div class="relative w-full max-w-4xl max-h-[96vh] sm:max-h-[92vh] flex flex-col bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200 overflow-hidden" id="detail-modal-container">
       
-      <!-- Modal Header -->
-      <div class="p-4 sm:p-6 border-b border-slate-200 bg-slate-50/80 flex items-start justify-between gap-4">
-        <div>
-          <div class="flex flex-wrap items-center gap-2 mb-2">
-            <span id="modal-nomor-badge" class="px-2.5 py-1 text-xs font-bold rounded-md bg-emerald-700 text-white shadow-2xs"></span>
-            <span id="modal-nomor-surat" class="text-xs font-mono font-bold text-emerald-900 bg-emerald-100/80 px-2.5 py-1 rounded-lg border border-emerald-200"></span>
-            <span id="modal-tahun" class="px-2 py-0.5 text-xs font-semibold rounded bg-slate-200 text-slate-700"></span>
-            <span id="modal-kategori" class="px-2 py-0.5 text-xs font-semibold rounded-md"></span>
+            <!-- Modal Header -->
+      <div class="p-3 sm:p-5 border-b border-slate-200 bg-slate-50/95 sticky top-0 z-20">
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 min-w-0">
+            <span id="modal-nomor-badge" class="px-2 py-0.5 text-[11px] sm:text-xs font-bold rounded-md bg-emerald-700 text-white shadow-2xs"></span>
+            <span id="modal-nomor-surat" class="text-[11px] sm:text-xs font-mono font-bold text-emerald-900 bg-emerald-100/80 px-2 py-0.5 rounded-lg border border-emerald-200"></span>
+            <span id="modal-tahun" class="px-1.5 py-0.5 text-[11px] sm:text-xs font-semibold rounded bg-slate-200 text-slate-700"></span>
+            <span id="modal-kategori" class="px-2 py-0.5 text-[11px] sm:text-xs font-semibold rounded-md"></span>
           </div>
-          <h2 id="modal-judul" class="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug"></h2>
+          <div class="flex items-center gap-1 shrink-0 no-print">
+            <button onclick="toggleFavoriteFromModal()" id="modal-fav-btn" class="p-1.5 text-slate-400 hover:text-amber-500 rounded-lg hover:bg-slate-200/70 border border-slate-200 bg-white" title="Simpan ke Favorit">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+            </button>
+            <button onclick="copyModalContent()" class="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70 border border-slate-200 bg-white" title="Salin Rujukan Fatwa">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            </button>
+            <button onclick="window.print()" class="hidden sm:inline-flex p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70 border border-slate-200 bg-white" title="Cetak Fatwa">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            </button>
+            <button onclick="closeDetailModal()" class="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70 ml-0.5" title="Tutup Modal">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+          </div>
         </div>
-        <div class="flex items-center gap-1.5 no-print">
-          <button onclick="toggleFavoriteFromModal()" id="modal-fav-btn" class="p-2 text-slate-400 hover:text-amber-500 rounded-lg hover:bg-slate-200/70" title="Simpan ke Favorit">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
-          </button>
-          <button onclick="window.print()" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70" title="Cetak Fatwa">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-          </button>
-          <button onclick="closeDetailModal()" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70" title="Tutup Modal">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          </button>
-        </div>
+        <h2 id="modal-judul" class="text-sm sm:text-xl font-bold sm:font-extrabold text-slate-900 leading-snug my-1.5 sm:my-2 line-clamp-3 sm:line-clamp-none"></h2>
       </div>
 
-      <!-- Modal Tabs -->
-      <div class="flex items-center px-4 sm:px-6 border-b border-slate-200 bg-white gap-2 overflow-x-auto text-xs sm:text-sm font-semibold">
-        <button onclick="setModalTab('semua')" id="mtab-semua" class="py-2.5 px-3 border-b-2 border-emerald-600 text-emerald-800 font-bold whitespace-nowrap">Semua Bagian</button>
-        <button onclick="setModalTab('ringkasan')" id="mtab-ringkasan" class="py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Diktum & Ketentuan</button>
-        <button onclick="setModalTab('dalil')" id="mtab-dalil" class="py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Dalil Qur'an & Hadits</button>
-        <button onclick="setModalTab('kaidah')" id="mtab-kaidah" class="py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Kaidah Fiqh & Ulama</button>
+      <!-- Modal Tabs & Font Sizing -->
+      <div class="flex items-center justify-between px-3 sm:px-6 border-b border-slate-200 bg-white gap-2 text-xs font-semibold">
+        <div class="flex items-center gap-1 overflow-x-auto py-1 scrollbar-none flex-1 min-w-0">
+          <button onclick="setModalTab('semua')" id="mtab-semua" class="py-1.5 px-2.5 sm:px-3 border-b-2 border-emerald-600 text-emerald-800 font-bold whitespace-nowrap">Semua</button>
+          <button onclick="setModalTab('ringkasan')" id="mtab-ringkasan" class="py-1.5 px-2.5 sm:px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Diktum Fatwa</button>
+          <button onclick="setModalTab('dalil')" id="mtab-dalil" class="py-1.5 px-2.5 sm:px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Dalil Qur'an & Hadits</button>
+          <button onclick="setModalTab('kaidah')" id="mtab-kaidah" class="py-1.5 px-2.5 sm:px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 whitespace-nowrap">Kaidah Fiqh & Ulama</button>
+        </div>
+        <div class="flex items-center gap-0.5 bg-slate-100 rounded-lg p-0.5 shrink-0 text-slate-700">
+          <button onclick="changeHtmlFontSize(-1)" class="px-1.5 py-0.5 text-xs font-bold hover:bg-white rounded" title="Perkecil Teks">A-</button>
+          <button onclick="changeHtmlFontSize(1)" class="px-1.5 py-0.5 text-xs font-bold hover:bg-white rounded" title="Perbesar Teks">A+</button>
+        </div>
       </div>
 
       <!-- Modal Body -->
@@ -432,7 +441,7 @@ function generateHtml() {
             <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             Ketentuan Pokok & Diktum Fatwa
           </h4>
-          <div id="modal-ringkasan" class="whitespace-pre-line text-slate-800 font-normal leading-relaxed text-sm"></div>
+          <div id="modal-ringkasan" class="whitespace-pre-line text-slate-800 font-normal leading-relaxed text-[15px] sm:text-base select-text"></div>
         </div>
 
         <!-- Akad & Subjek -->
@@ -990,7 +999,7 @@ function generateHtml() {
           html += '<div dir="rtl" class="font-arabic text-xl sm:text-2xl text-slate-900 leading-loose text-right mb-3 py-1 select-all">' + arabic + '</div>';
         }
         if (translation) {
-          html += '<div dir="ltr" class="' + transBg + ' p-3 rounded-xl border text-xs sm:text-sm text-slate-800 text-left">';
+          html += '<div dir="ltr" class="' + transBg + ' p-3 rounded-xl border text-sm sm:text-base text-slate-800 text-left">';
           html += '<span class="text-[11px] font-bold uppercase tracking-wider ' + labelColor + ' block mb-1">Terjemahan:</span>';
           html += '<p class="italic font-normal">"' + translation + '"</p>';
           html += '</div>';
@@ -1042,6 +1051,22 @@ function generateHtml() {
 
       document.getElementById('detail-modal').classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
+    }
+
+    
+    let htmlFontSizeLevel = 0;
+    function changeHtmlFontSize(delta) {
+      htmlFontSizeLevel = Math.max(0, Math.min(2, htmlFontSizeLevel + delta));
+      const ringkasanEl = document.getElementById('modal-ringkasan');
+      if (ringkasanEl) {
+        if (htmlFontSizeLevel === 0) {
+          ringkasanEl.style.fontSize = '15px';
+        } else if (htmlFontSizeLevel === 1) {
+          ringkasanEl.style.fontSize = '17px';
+        } else {
+          ringkasanEl.style.fontSize = '19px';
+        }
+      }
     }
 
     function setModalTab(tab) {
