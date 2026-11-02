@@ -16,7 +16,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Qiyas. Transaksi mudharabah, yakni penyerahan sejumlah harta (dana, modal) dari satu pihak (malik, shahib al-mal) kepada  pihak lain ('amil, mudharib) untuk diperniagakan (diproduktifkan) dan keuntungan dibagi di antara mereka sesuai kesepakatan, diqiyaskan kepada transaksi musaqah.\nPara ulama menyatakan, dalam kenyataan banyak orang yang mempunyai harta namun tidak mempunyai kepandaian dalam usaha memproduktifkannya, sementara itu tidak sedikit pula orang yang tidak memiliki harta namun ia mempunyai kemampuan dalam memproduktifkannya. Oleh karena itu, diperlukan adanya kerjasama di antara kedua pihak tersebut.",
     "ringkasan": "Menetapkan FATWA TENTANG GIRO:\n1. Giro ada dua jenis: Giro yang tidak dibenarkan syariah (berdasarkan bunga) dan Giro yang dibenarkan syariah (berdasarkan Mudharabah dan Wadi'ah).\n2. Ketentuan Giro Mudharabah: Nasabah bertindak sebagai shahibul maal, bank sebagai mudharib. Modal dalam bentuk tunai. Pembagian keuntungan dalam bentuk nisbah disepakati di awal akad. Bank menutup biaya operasional dari porsi nisbahnya.\n3. Ketentuan Giro Wadi'ah: Bersifat titipan murni, dana dapat ditarik sewaktu-waktu (on call), tidak ada imbalan yang disyaratkan selain bonus ('athaya) sukarela dari bank.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/giro",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzUDREVGhwZ2FfRUE/view?usp=sharing&resourcekey=0-QU1lUqK77tkDtp3G8zdb9Q",
     "tags": [
       "giro",
       "wadiah",
@@ -41,7 +41,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Qiyas. Transaksi mudharabah diqiyaskan kepada transaksi musaqah.\nPara ulama menyatakan, dalam kenyataan banyak orang yang mempunyai harta namun tidak mempunyai kepandaian dalam usaha memproduktifkannya; sementara itu, tidak sedikit pula orang yang tidak memiliki harta namun ia mempunyai kemampuan dalam memproduktifkannya. Oleh karena itu, diperlukan adanya kerjasama di antara kedua pihak tersebut.",
     "ringkasan": "Menetapkan FATWA TENTANG TABUNGAN:\n1. Tabungan dibenarkan secara syariah jika menggunakan prinsip Mudharabah atau Wadi'ah.\n2. Tabungan Mudharabah: Nasabah sebagai pemilik dana, bank sebagai pengelola. Nisbah keuntungan disepakati saat pembukaan rekening. Bank menanggung biaya dari nisbah haknya.\n3. Tabungan Wadi'ah: Bersifat titipan yang dapat diambil kapan saja, penjaminan keamanan titipan, dan pemberian bonus sukarela tanpa diperjanjikan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/tabungan",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzNmFEM0lHS182Nkk/view?usp=sharing&resourcekey=0-oLyeS77nJeOtE8foTT2A3A",
     "tags": [
       "tabungan",
       "saving",
@@ -64,7 +64,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Qiyas. Transaksi mudharabah diqiyaskan kepada transaksi musaqah.\nPara ulama menyatakan, dalam kenyataan banyak orang yang mempunyai harta namun tidak mempunyai kepandaian dalam usaha memproduktifkannya; sementara itu, tidak sedikit pula orang yang tidak memiliki harta kekayaan namun ia mempunyai kemampuan dalam memproduktifkannya. Oleh karena itu, diperlukan adanya kerjasama di antara kedua pihak tersebut.",
     "ringkasan": "Menetapkan FATWA TENTANG DEPOSITO:\n1. Deposito syariah dibenarkan berdasarkan prinsip Mudharabah.\n2. Nasabah bertindak sebagai shahibul maal dan bank sebagai mudharib.\n3. Modal harus dinyatakan dalam jumlah tunai yang jelas.\n4. Nisbah bagi hasil disepakati dan dituangkan dalam akad pembukaan deposito berjangka.\n5. Bank tidak boleh mengurangi nisbah nasabah tanpa persetujuan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/deposito",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzRzNyUWR4RnF4RVU/view?usp=sharing&resourcekey=0-vECWD3qOPLA8WD3BSP9KIw",
     "tags": [
       "deposito",
       "mudharabah",
@@ -87,7 +87,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma' Mayoritas ulama tentang kebolehan jual beli dengan cara Murabahah (Ibnu Rusyd, Bidayah al-Mujtahid, juz 2, hal. 161; lihat pula al-Kasani, Bada’i as-Sana’i, juz 5 Hal. 220-222).",
     "ringkasan": "Ketentuan Umum Murabahah dalam Bank Syariah:\n1. Bebas riba dan barang tidak diharamkan syariat.\n2. Bank membeli barang pesanan nasabah atas nama bank secara sah.\n3. Bank memberitahu secara jujur harga perolehan (pokok) dan menetapkan margin keuntungan.\n4. Nasabah membayar secara cicilan atau lunas dalam jangka waktu yang disepakati.\n5. Jika bank mewakilkan pembelian (wakalah), akad murabahah dilakukan setelah barang sah milik bank.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/murabahah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzdVVoTElXWEdZSFk/view?usp=sharing&resourcekey=0-lsYIYxp_WgutHrwXLadJUQ",
     "tags": [
       "murabahah",
       "jual beli",
@@ -110,7 +110,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma. Menurut Ibnul Munzir, ulama sepakat (ijma’) atas kebolehan jual beli dengan cara salam. Di samping itu, cara tersebut juga diperlukan oleh masyarakat (Wahbah, 4/598).",
     "ringkasan": "Ketentuan Jual Beli Salam:\n1. Pembayaran dilakukan penuh di awal secara tunai pada saat kontrak disepakati.\n2. Barang pesanan (muslam fiih) harus jelas spesifikasi, takaran/timbangan, dan waktu penyerahan yang pasti.\n3. Dibolehkan Salam Paralel dengan syarat akad kedua terpisah dan tidak bergantung pada akad pertama.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/jual-beli-salam",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzZ3JSZjFuRHN5MjA/view?usp=sharing&resourcekey=0-GFms2sqm62qRmnyS9Qioeg",
     "tags": [
       "salam",
       "pesanan",
@@ -133,7 +133,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Menurut mazhab Hanafi, istishna' hukumnya boleh (jawaz) karena hal itu telah dilakukan oleh masyarakat muslim sejak masa awal tanpa ada pihak (ulama) yang mengingkarinya.",
     "ringkasan": "Ketentuan Jual Beli Istishna':\n1. Akad pesanan pembuatan barang dengan kriteria dan spesifikasi tertentu.\n2. Pembayaran dapat dilakukan di muka, cicilan/termin progresif, atau di akhir sesuai kesepakatan.\n3. Pemesan memiliki hak khiyar jika barang jadi tidak sesuai spesifikasi akad.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/jual-beli-istishna",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzZUZ4a0EzTXlvdmM/view?usp=sharing&resourcekey=0-Q5fIOkU5aXxnfC0UQ8NrXw",
     "tags": [
       "istishna",
       "manufaktur",
@@ -156,7 +156,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Mudharabah diqiyaskan kepada transaksi musaqah dalam rangka kemaslahatan pengelolaan usaha produktif.",
     "ringkasan": "Ketentuan Pembiayaan Mudharabah:\n1. LKS membiayai 100% kebutuhan modal proyek produktif, nasabah bertindak sebagai mudharib (pengelola).\n2. Keuntungan dibagi sesuai nisbah yang disepakati bersama.\n3. Kerugian finansial ditanggung shahibul maal, kecuali jika terjadi kelalaian (tafrith/ta'addi) oleh mudharib.\n4. LKS berhak melakukan pengawasan usaha tanpa mencampuri manajemen harian.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pembiayaan-mudharabah-qiradh",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzTjJlNlp6TVltSG8/view?usp=sharing&resourcekey=0-BNCdLSgVYDNoWz0XhzRWBg",
     "tags": [
       "mudharabah",
       "pembiayaan",
@@ -179,7 +179,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma' ulama membolehkan akad musyarakah/syirkah sebagai bentuk kemitraan usaha.",
     "ringkasan": "Ketentuan Pembiayaan Musyarakah:\n1. Setiap mitra menyertakan modal dan kerja sama pengelolaan.\n2. Keuntungan dibagi berdasarkan nisbah yang disepakati dalam akad.\n3. Kerugian ditanggung bersama secara proporsional sesuai porsi modal masing-masing mitra.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pembiayaan-musyarakah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzUXk1MXdDa241QUE/view?usp=sharing&resourcekey=0-IdZe1HAEmh5htzyEDYIkIg",
     "tags": [
       "musyarakah",
       "syirkah",
@@ -202,7 +202,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nدَرْءُ الْمَفَاسِدِ مُقَدَّمٌ عَلَى جَلْبِ الْمَصَالِحِ\nArtinya: \"Menolak kemafsadatan (kerusakan/kerugian) lebih diutamakan daripada meraih kemaslahatan.\"",
     "kalam_ulama": "Ijma' ulama membolehkan akad sewa-menyewa manfaat barang maupun jasa tenaga kerja.",
     "ringkasan": "Ketentuan Pembiayaan Ijarah:\n1. Objek ijarah adalah manfaat barang dan/atau jasa yang bernilai dan dibolehkan syariat.\n2. Ujrah (sewa/upah) disepakati secara jelas nominal dan jangka waktunya.\n3. Pemberi sewa bertanggung jawab memelihara kelayakan barang sewa, penyewa bertanggung jawab atas biaya operasional pemakaian wajar.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pembiayaan-ijarah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzWTJMRVY3bzdiYVk/view?usp=sharing&resourcekey=0-31uJZUrr7VSi_M5DDHXvGg",
     "tags": [
       "ijarah",
       "sewa",
@@ -226,7 +226,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma' ulama membolehkan wakalah (pelimpahan kuasa) sebagai wujud ta'awun (tolong menolong).",
     "ringkasan": "Ketentuan Wakalah:\n1. Pelimpahan kuasa dari muwakkil kepada wakil untuk hal yang dibolehkan syariat.\n2. Wakalah dengan imbalan (ujrah) bersifat mengikat dan tidak dapat dibatalkan sepihak.\n3. Syarat wakil: cakap hukum, amanah, dan mampu mengerjakan tugas yang dikuasakan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/wakalah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzdWhkNkpRLWd4Qms/view?usp=sharing&resourcekey=0-h2oKAFkz4IEhfSzj6I28pg",
     "tags": [
       "wakalah",
       "kuasa",
@@ -249,7 +249,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Kafalah disyariatkan untuk menjamin kelancaran muamalah dan perlindungan hak kreditur.",
     "ringkasan": "Ketentuan Kafalah:\n1. Jaminan yang diberikan penjamin (kafil) kepada pihak ketiga untuk memenuhi kewajiban pihak yang ditanggung (makful 'anhu).\n2. Penjamin boleh menerima fee/ujrah sepanjang tidak memberatkan.\n3. Objek jaminan harus utang/tanggungan yang mengikat dan tidak bertentangan dengan syariat.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/kafalah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzNWFmSkdadEc1RTQ/view?usp=sharing&resourcekey=0-cjRxwTcEH4Al5slTtJzIyg",
     "tags": [
       "kafalah",
       "penjaminan",
@@ -272,7 +272,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Ijma' ulama sepakat membolehkan akad pemindahan piutang dan utang (hawalah).",
     "ringkasan": "Ketentuan Hawalah:\n1. Pengalihan penagihan utang dari pihak muhil ke muhal 'alaih.\n2. Dilakukan atas persetujuan semua pihak terkait (muhil, muhtal, muhal 'alaih).\n3. Hak penagihan berpindah sepenuhnya kepada pihak yang menerima pengalihan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/hawalah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzb3JhRS05UjJUeEk/view?usp=sharing&resourcekey=0-y00PEZrUI0kNZmQ13mdl-Q",
     "tags": [
       "hawalah",
       "pengalihan utang",
@@ -294,7 +294,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Para ulama sepakat bahwa meminta uang muka ('urbun/hamisy jiddiyah) dalam jual beli adalah boleh.",
     "ringkasan": "Ketentuan Uang Muka dalam Murabahah:\n1. LKS dibolehkan meminta uang muka berdasarkan kesepakatan.\n2. Jika nasabah membatalkan akad, nasabah wajib mengganti kerugian riil yang dialami LKS yang dipotong dari uang muka.\n3. Jika uang muka lebih besar dari kerugian riil, kelebihannya wajib dikembalikan kepada nasabah.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/uang-muka-dalam-murabahah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzX2hISlNXclhvN2M/view?usp=sharing&resourcekey=0-v-JOlAdLjifP8msBi429zw",
     "tags": [
       "uang muka",
       "murabahah",
@@ -318,7 +318,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "Kemaslahatan menghendaki pembagian hasil didasarkan pada penerimaan kas nyata.",
     "ringkasan": "Ketentuan Distribusi Hasil Usaha:\n1. LKS boleh menggunakan sistem Accrual Basis maupun Cash Basis dalam administrasi keuangan.\n2. Dalam pencatatan akuntansi sebaiknya menggunakan Accrual Basis, namun dalam pembagian distribusi hasil usaha hendaknya berdasarkan penerimaan riil yang benar-benar terjadi (Cash Basis).",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/sistem-distribusi-hasil-usaha-dalam-lembaga-keuangan-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzMTdOV1BVZjZUX1U/view?usp=sharing&resourcekey=0-9mpd1BK8EnjGfHUP7JGU6A",
     "tags": [
       "distribusi hasil",
       "cash basis",
@@ -341,7 +341,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "Net Revenue Sharing dipandang lebih mencerminkan kemaslahatan dan keadilan saat ini bagi bank syariah dan nasabah.",
     "ringkasan": "Ketentuan Prinsip Distribusi Hasil Usaha:\n1. LKS boleh menggunakan prinsip Bagi Hasil (Net Revenue Sharing) maupun Bagi Untung (Profit Sharing).\n2. Dari segi kemaslahatan, pembagian hasil usaha sebaiknya menggunakan prinsip Bagi Hasil (Net Revenue Sharing).\n3. Metode yang dipilih wajib disepakati di dalam akad.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/prinsip-distribusi-hasil-usaha-dalam-lembaga-keuangan-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzMnZ1YlpMdG12dTg/view?usp=sharing&resourcekey=0-CnqtEM8Y2i7ZBEC4Yhy1PA",
     "tags": [
       "revenue sharing",
       "profit sharing",
@@ -363,7 +363,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "Diskon dari pemasok merupakan faktor pengurang harga pokok perolehan yang menjadi hak nasabah pemesan.",
     "ringkasan": "Ketentuan Diskon dalam Murabahah:\n1. Jika LKS mendapat diskon dari supplier sebelum akad, harga perolehan sebenarnya adalah harga setelah diskon, sehingga diskon adalah hak nasabah.\n2. Jika diskon diberikan setelah akad, pembagiannya dilakukan sesuai klausul kesepakatan dalam akad.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/diskon-dalam-murabahah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzMEhLMWVSaEkyb2s/view?usp=sharing&resourcekey=0-2VtFq045KVQz0OFphowcig",
     "tags": [
       "diskon",
       "murabahah",
@@ -385,7 +385,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Penegakan sanksi ta'zir bertujuan menjaga kedisiplinan dan melindungi integritas industri perbankan syariah.",
     "ringkasan": "Ketentuan Sanksi Nasabah Menunda Pembayaran:\n1. Sanksi dikenakan kepada nasabah yang mampu membayar tetapi sengaja menunda pembayaran.\n2. Nasabah yang belum mampu karena force majeure tidak boleh dikenakan sanksi.\n3. Sanksi berupa denda uang yang disepakati dalam akad, dan seluruh dana denda wajib disalurkan sebagai Dana Sosial (kebajikan).",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/sanksi-atas-nasabah-mampu-yang-menunda-nunda-pembayaran",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzX2E1TThsc3FwbjQ/view?usp=sharing&resourcekey=0-pSPzYKu8VxrqCfs2n_Ys7w",
     "tags": [
       "sanksi",
       "denda",
@@ -408,7 +408,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"\n\n[Kaidah Fiqhiyyah 3]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "Kemaslahatan dan 'urf dalam lembaga keuangan menghendaki adanya pencadangan sebagai salah satu upaya mengurang resiko kerugian yang mungkin terjadi",
     "ringkasan": "Ketentuan PPAP:\n1. Pencadangan penghapusan aktiva produktif boleh dilakukan oleh LKS.\n2. Dana pencadangan diambil dari bagian keuntungan yang menjadi hak LKS sehingga tidak merugikan nasabah penyimpan dana.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pencadangan-penghapusan-aktiva-produktif-dalam-lembaga-keuangan-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzODZvM1NGOXQ4T1k/view?usp=sharing&resourcekey=0-CGg_-7K-BON9HWOh27se5Q",
     "tags": [
       "ppap",
       "cadangan",
@@ -430,7 +430,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nكُلُّ قَرْضٍ جَرَّ مَنْفَعَةً فَهُوَ رِبَا\nArtinya: \"Setiap pinjaman yang mendatangkan kemanfaatan (yang dipersyaratkan oleh pemberi pinjaman) adalah riba.\"",
     "kalam_ulama": "Pinjaman qardh adalah akad tolong-menolong tanpa mengambil keuntungan atas pokok utang.",
     "ringkasan": "Ketentuan Al-Qardh:\n1. Pinjaman dana kebajikan kepada nasabah yang membutuhkan, nasabah wajib mengembalikan pokok pinjaman sesuai waktu yang disepakati.\n2. Biaya administrasi riil dapat dibebankan kepada nasabah.\n3. Nasabah boleh memberikan sumbangan tambahan sukarela selama tidak diperjanjikan di awal akad.\n4. Jika nasabah mengalami kesulitan nyata, LKS dapat memperpanjang waktu atau menghapusbukukan piutang.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/al-qardh",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzMGFYQ1FXVGQ5X3M/view?usp=sharing&resourcekey=0-8t3ZTcPJKVYeFZGt_-8hMw",
     "tags": [
       "qardh",
       "pinjaman",
@@ -454,7 +454,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Portofolio efek syariah harus bebas dari emiten yang bergerak dalam usaha haram atau transaksi ribawi.",
     "ringkasan": "Ketentuan Reksa Dana Syariah:\n1. Wadah penghimpunan dana pemodal yang diinvestasikan pada portofolio efek syariah oleh Manajer Investasi.\n2. Akad antara pemodal dan Manajer Investasi menggunakan Wakalah atau Mudharabah.\n3. Efek portofolio wajib memenuhi kriteria halal dari segi jenis usaha, transaksi, dan rasio keuangan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pedoman-pelaksanaan-investasi-untuk-reksa-dana-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzdk53ZWY5Q3hwS0k/view?usp=sharing&resourcekey=0-togwCIBnfWOztvbIHF7spw",
     "tags": [
       "reksa dana",
       "pasar modal",
@@ -479,7 +479,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Asuransi syariah (takaful) bertumpu pada prinsip gotong royong dan tolong menolong (ta'awuni) dalam menghadapi musibah.",
     "ringkasan": "Pedoman Pokok Asuransi Syariah (Ta'min/Takaful):\n1. Usaha saling melindungi dan tolong menolong antarpeserta melalui akad tabarru' dan/atau investasi yang tidak mengandung gharar, maysir, dan riba.\n2. Akad tijarah (komersial) menggunakan mudharabah/wakalah, sedangkan akad tabarru' bersifat hibah kebajikan.\n3. Pengelolaan dana tabarru' terpisah dari dana pemegang saham.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pedoman-umum-asuransi-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzSGNSNmYtZVFXRjg/view?usp=sharing&resourcekey=0-UGjKqL--kCYlPkFWaoU3aA",
     "tags": [
       "asuransi",
       "takaful",
@@ -503,7 +503,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"",
     "kalam_ulama": "Istishna' Paralel memfasilitasi peran LKS sebagai perantara pengadaan konstruksi dan barang pesanan secara halal.",
     "ringkasan": "Ketentuan Istishna' Paralel:\n1. LKS dapat melakukan akad istishna' kedua dengan sub-kontraktor/produsen untuk memenuhi pesanan nasabah.\n2. Akad pertama tidak boleh bergantung (mu'allaq) pada akad kedua.\n3. LKS tidak boleh memungut MDC (margin during construction) dari nasabah sebelum barang diserahterimakan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/jual-beli-istishna-paralel",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzYlNpbmd2cjdXTDQ/view?usp=sharing&resourcekey=0-PCWMXHyWRQOxnYGK4-HMhw",
     "tags": [
       "istishna paralel",
       "properti",
@@ -525,7 +525,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Pemberian potongan pelunasan diperbolehkan sebagai kebijakan sukarela LKS tanpa diperjanjikan di muka.",
     "ringkasan": "Ketentuan Potongan Pelunasan Murabahah:\n1. Jika nasabah melunasi pembayaran tepat waktu atau lebih cepat dari tempo, LKS boleh memberikan potongan dari sisa kewajiban.\n2. Syarat utama: potongan tersebut TIDAK BOLEH diperjanjikan di dalam akad pembukaan.\n3. Besaran potongan diserahkan pada kebijakan dan pertimbangan wajar LKS.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/potongan-pelunasan-dalam-murabahah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzRmcwVDVCMWg1X2M/view?usp=sharing&resourcekey=0-jxWZunBPpWVdPpUwP4w_8Q",
     "tags": [
       "potongan pelunasan",
       "diskon",
@@ -548,7 +548,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Penyewaan ruang penyimpanan harta berharga dikategorikan sebagai ijarah atas manfaat ruang dan keamanan.",
     "ringkasan": "Ketentuan Safe Deposit Box (SDB):\n1. Layanan SDB menggunakan akad Ijarah (sewa ruang dan fasilitas penyimpanan).\n2. Barang yang disimpan harus barang berharga yang halal dan tidak dilarang hukum negara.\n3. Biaya sewa ditetapkan berdasarkan kesepakatan.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/safe-deposit-box",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzVmI4VXk1YUZwbDQ/view?usp=sharing&resourcekey=0-BYP5VJQSUnkG4-0jLLzBdw",
     "tags": [
       "safe deposit box",
       "sdb",
@@ -573,7 +573,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma:\nPara ulama sepakat membolehkan akad Rahn. (al-Zuhaili, al-Fiqh al-Islami wa Adillatuhu, 1985, V: 181)",
     "ringkasan": "Ketentuan Rahn (Gadai Syariah):\n1. Penerima gadai (murtahin) berhak menahan barang gadai (marhun) sampai utang dilunasi.\n2. Manfaat barang gadai tetap milik penggadai (rahin).\n3. Biaya pemeliharaan dan penyimpanan marhun tidak boleh dihitung berdasarkan jumlah pinjaman utang, melainkan biaya riil sewa tempat/jasa (ijarah).",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/rahn",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzS0UxSFd3MXFVTDg/view?usp=sharing&resourcekey=0-s1X-OP5v65MGB2ojILA52w",
     "tags": [
       "rahn",
       "gadai",
@@ -598,7 +598,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Gadai emas dibolehkan dengan pemisahan tegas antara akad pinjaman (qardh) dan akad penyimpanan (ijarah).",
     "ringkasan": "Ketentuan Rahn Emas:\n1. Rahn emas dibolehkan berdasarkan prinsip rahn.\n2. Ongkos penyimpanan barang gadai ditanggung oleh nasabah (rahin) atas dasar biaya nyata yang diperlukan (akad ijarah).\n3. Besaran biaya simpan tidak boleh dikaitkan dengan persentase uang pinjaman.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/rahn-emas",
+    "url_sumber": "https://dsnmui.or.id/kategori/fatwa/",
     "tags": [
       "rahn emas",
       "gadai emas",
@@ -622,7 +622,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "IMBT diperbolehkan dengan memisahkan akad ijarah terlebih dahulu dan janji perpindahan kepemilikan setelah masa sewa tuntas.",
     "ringkasan": "Ketentuan IMBT (Sewa Beli / Leasing Syariah):\n1. Akad sewa-menyewa barang yang disertai janji (wa'd) pemindahan kepemilikan di akhir masa sewa.\n2. Akad sewa (ijarah) harus berjalan terlebih dahulu.\n3. Akad pemindahan kepemilikan (jual beli atau hibah) hanya sah dilakukan setelah masa sewa berakhir.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/al-ijarah-al-muntahiyah-bi-al-tamlik",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzR1Rtb3BYSy10OVk/view?usp=sharing&resourcekey=0-dkgOVqLpjdDmgr_4hgXeyg",
     "tags": [
       "imbt",
       "leasing syariah",
@@ -644,7 +644,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Ijma' ulama bahwa transaksi sharf (valuta asing) disyariatkan untuk kebutuhan transaksi riil tanpa spekulasi.",
     "ringkasan": "Ketentuan Jual Beli Mata Uang (Al-Sharf):\n1. Syarat: Tidak untuk spekulasi (untung-untungan), ada kebutuhan riil transaksi/simpanan, dilakukan secara tunai (spot).\n2. Transaksi Spot (maks 2 hari kerja penyelesaian) hukumnya BOLEH.\n3. Transaksi Forward, Swap, dan Option konvensional hukumnya HARAM karena mengandung riba, maysir, dan gharar.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/jual-beli-mata-uang-al-sharf",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzbVd5VE5WV1ZqcW8/view?usp=sharing&resourcekey=0-Hy7g6_DjIQN0EdnGdfJTpg",
     "tags": [
       "sharf",
       "valas",
@@ -668,7 +668,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Pengurusan haji memadukan jasa pelayanan (ijarah) dan bantuan dana talangan (qardh).",
     "ringkasan": "Ketentuan Pembiayaan Haji:\n1. LKS dapat memperoleh ujrah atas jasa pengurusan pendaftaran dan dokumen haji berdasarkan akad Ijarah.\n2. LKS dapat menalangi pembayaran BPIH nasabah menggunakan akad Qardh.\n3. Besar ujrah ijarah TIDAK BOLEH dikaitkan dengan besaran dana talangan qardh.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pembiayaan-pengurusan-haji-lembaga-keuangan-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzSzA4MjgweFlWTUU/view?usp=sharing&resourcekey=0-5M1rLBZ1I4qFnml45QG8hQ",
     "tags": [
       "haji",
       "talangan haji",
@@ -693,7 +693,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"",
     "kalam_ulama": "Rekening koran syariah menggantikan sistem bunga dengan akad murabahah/ijarah berplafon.",
     "ringkasan": "Ketentuan Pembiayaan Rekening Koran Syariah (PRKS):\n1. Menggunakan wa'd (janji komitmen) untuk wakalah dalam pembelian barang secara murabahah atau sewa ijarah.\n2. Margin atau ujrah disepakati ketika penarikan plafon dilakukan.\n3. Penarikan pembiayaan dituangkan dalam akad pelaksanaan tersendiri.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pembiayaan-rekening-koran-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzZk1RcERMNEg4TWc/view?usp=sharing&resourcekey=0-86eleWIwcI5_TChFasqOIg",
     "tags": [
       "rekening koran",
       "prks",
@@ -719,7 +719,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"",
     "kalam_ulama": "Pengalihan utang (take over pembiayaan) dari konvensional ke bank syariah untuk melepaskan diri dari transaksi ribawi.",
     "ringkasan": "Ketentuan Pengalihan Utang (Take Over):\n1. Pemindahan utang kredit nasabah dari bank konvensional ke bank syariah.\n2. Menggunakan 4 alternatif akad sah: Qardh diikuti Murabahah, Pembelian porsi kepemilikan aset bersama (syirkah) lalu di-ijarah-kan, atau Hawalah.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pengalihan-utang",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzN2VGYjJFdjRCTms/view?usp=sharing&resourcekey=0-JrSTkQKXJXD-_JIPpA4Rjw",
     "tags": [
       "pengalihan utang",
       "take over",
@@ -747,7 +747,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"",
     "kalam_ulama": "Obligasi syariah (sukuk) mewakili kepemilikan atas underlying aset riil, bukan instrumen utang berbunga.",
     "ringkasan": "Ketentuan Obligasi Syariah (Sukuk):\n1. Surat berharga jangka panjang syariah yang diterbitkan emiten dengan kewajiban pembayaran imbalan bagi hasil/margin/ujrah dan pelunasan pokok saat jatuh tempo.\n2. Akad yang dapat digunakan: Mudharabah, Musyarakah, Ijarah, Murabahah, Salam, Istishna'.\n3. Kegiatan emiten dan penggunaan dana wajib bebas dari unsur non-halal.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/obligasi-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzcUxidldISlJHMVk/view?usp=sharing&resourcekey=0-FtK1AN7nu1nH5ShGi1KVhw",
     "tags": [
       "sukuk",
       "obligasi syariah",
@@ -770,7 +770,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"",
     "kalam_ulama": "Ijma’ para ulama tentang kebolehan menggunakan prinsip Mudharabah dalam investasi sebagaimana dijelaskan oleh Ibnu Qudamah dalam al-Mughni (V/135) dengan mengutip keterangan Ibnul Mundzir dalam Al-Ijma’, Al-Kasani dalam Bada-i’ Al-Shanai’, Al-Shan’ani dalam Subulus Salam (III/103), Al-Zarqani dalam Syarhu Al-Muwattha’ (IV/319) dan Wahbah Al-Zuhaily dalam Al-Fiqh al-Islamy Wa Adillatuhu (IV/838).",
     "ringkasan": "Ketentuan Obligasi Syariah Mudharabah:\n1. Pemegang obligasi bertindak sebagai shahibul maal, emiten sebagai mudharib.\n2. Nisbah bagi hasil ditentukan di awal akad dari pendapatan/keuntungan proyek emiten.\n3. Dana investasi tidak boleh dijamin pengembaliannya oleh mudharib kecuali akibat kelalaian.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/obligasi-syariah-mudharabah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzWmRybHNxR0pKV0U/view?usp=sharing&resourcekey=0-14z9XK9EneoITQRIHarxpg",
     "tags": [
       "sukuk mudharabah",
       "obligasi",
@@ -800,7 +800,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"\n\n[Kaidah Fiqhiyyah 3]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "Penerbitan L/C impor berbasis syariah mengakomodasi perdagangan internasional dengan akad multi-skema halal.",
     "ringkasan": "Ketentuan L/C Impor Syariah:\n1. Surat pernyataan pembayaran oleh Bank untuk kepentingan Importir kepada Eksportir sesuai syariah.\n2. Bentuk skema akad: Wakalah bil Ujrah, Wakalah bil Ujrah + Qardh, Murabahah, Salam/Istishna', Mudharabah, Musyarakah, atau Hawalah.\n3. Besar ujrah dinyatakan dalam bentuk nominal tetap, bukan persentase.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/letter-of-credit-lc-impor-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzdTVIdEhIdVh0WkE/view?usp=sharing&resourcekey=0-tYdzFgaCLkTn7S_-D6RNQQ",
     "tags": [
       "lc impor",
       "letter of credit",
@@ -826,7 +826,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالْمَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا\nArtinya: \"Sesuatu yang telah dikenal luas menurut adat kebiasaan sama kedudukannya dengan syarat yang disepakati secara tertulis.\"\n\n[Kaidah Fiqhiyyah 3]\nأَيْنَمَا وُجِدَتِ الْمَصْلَحَةُ فَثَمَّ حُكْمُ اللَّهِ\nArtinya: \"Di mana pun terdapat kemaslahatan hakiki bagi umat manusia, maka di sanalah terdapat hukum Allah.\"",
     "kalam_ulama": "L/C ekspor syariah memfasilitasi transaksi eksportir dalam negeri dengan penerimaan pembayaran aman.",
     "ringkasan": "Ketentuan L/C Ekspor Syariah:\n1. Fasilitasi perdagangan ekspor melalui bank syariah dengan akad Wakalah bil Ujrah, Qardh, Mudharabah, Musyarakah, atau Al-Bai'.\n2. Bank bertindak mengurus dokumen dan menagih (collection) kepada issuing bank.\n3. Tidak boleh ada keterkaitan (ta'alluq) antara akad Wakalah bil Ujrah dan Qardh.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/letter-of-credit-lc-ekspor-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzdHQtUlNEWEpzWWM/view?usp=sharing&resourcekey=0-k-UJb8ZApJxQEGgZPfSKtA",
     "tags": [
       "lc ekspor",
       "ekspor",
@@ -849,7 +849,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Instrumen moneter bank sentral syariah untuk mengelola kelebihan likuiditas tanpa bunga.",
     "ringkasan": "Ketentuan SWBI (Sertifikat Wadi'ah Bank Indonesia):\n1. Bank Indonesia boleh menerbitkan instrumen moneter berdasarkan akad Wadi'ah untuk mengatasi kelebihan likuiditas bank syariah.\n2. Tidak boleh ada imbalan yang disyaratkan di awal, selain bonus sukarela ('athaya) dari Bank Indonesia.\n3. SWBI tidak boleh diperjualbelikan di pasar sekunder.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/sertifikat-wadiah-bank-indonesia",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzcm53QnlvbDZJYWs/view?usp=sharing&resourcekey=0-CLrQJenMBQRs07A1e_jMIw",
     "tags": [
       "swbi",
       "bank indonesia",
@@ -876,7 +876,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "الضَّرَرُ يُدْفَعُ بِقَدْرِ اْلإِمْكَانِ\n\"Segala madharat (bahaya) harus dihindarkan sedapat mungkin.\" (As-Suyuthi, Al-Asybah wan Nadzair, 62)\nالضَّرَرُ يُزَالُ\n\"Segala madharat (bahaya) harus dihilangkan.\" (As-Suyuthi, Al-Asybah wan Nadzair, 60)\nتَصَرُّفُ اْلإِمَامِ عَلىَ الرَّعِيَّةِ مَنُوْطٌ بِالْمَصْلَحَةِ\n\"Tindakan Imam [pemegang otoritas] terhadap rakyat harus mengikuti mashlahat.\" (As-Suyuthi, Al-Asybah wan Nadzair, 121)\nدَرْءُ الْمَفَاسِدِ مُقَدَّمٌ عَلَى جَلْبِ الْمَصَالِحِ\n\"Mencegah mafsadah (kerusakan) harus didahulukan daripada mengambil kemaslahatan.\" (As-Suyuthi, Al-Asybah wan Nadzair, 78, 105).",
     "ringkasan": "Ketentuan Pasar Uang Antarbank Syariah (PUAS):\n1. Transaksi keuangan jangka pendek antarpeserta pasar berdasarkan prinsip syariah.\n2. Akad yang digunakan: Mudharabah, Musyarakah, Qardh, Wadi'ah, Al-Sharf.\n3. Instrumen pasar uang syariah hanya boleh dipindahtangankan satu kali.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pasar-uang-antarbank-berdasarkan-prinsip-syariah",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzYVB5RW5KbGVoTFk/view?usp=sharing&resourcekey=0-iBENrHoG1Iig0cGkYOy75w",
     "tags": [
       "puas",
       "pasar uang",
@@ -899,7 +899,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nدَرْءُ الْمَفَاسِدِ مُقَدَّمٌ عَلَى جَلْبِ الْمَصَالِحِ\nArtinya: \"Menolak kemafsadatan (kerusakan/kerugian) lebih diutamakan daripada meraih kemaslahatan.\"\n\n[Kaidah Fiqhiyyah 3]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Sertifikat IMA menjadi sarana investasi antarbank syariah berbasis bagi hasil riil portofolio pembiayaan.",
     "ringkasan": "Ketentuan Sertifikat IMA:\n1. Instrumen investasi antarbank berbasis akad Mudharabah.\n2. Bank syariah penerbit bertindak sebagai mudharib, bank penanam dana sebagai shahibul maal.\n3. Sertifikat IMA hanya dapat dipindahtangankan satu kali setelah pembelian perdana.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/sertifikat-investasi-mudharabah-antarbank-sertifikat-ima",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzalBPWHVIdVUzQmc/view?usp=sharing&resourcekey=0-h-6ztkciMO7Yh0Rw4qZ8rQ",
     "tags": [
       "sertifikat ima",
       "mudharabah",
@@ -923,7 +923,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah 1]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"\n\n[Kaidah Fiqhiyyah 2]\nالضَّرَرُ يُزَالُ\nArtinya: \"Kemudaratan (bahaya/kerugian) harus dihilangkan sedapat mungkin.\"",
     "kalam_ulama": "Perlindungan jamaah haji didasarkan atas konsep ta'awuni (tolong-menolong) melalui dana hibah tabarru'.",
     "ringkasan": "Ketentuan Asuransi Haji Syariah:\n1. Asuransi haji berbasis syariah bersifat ta'awuni (tolong-menolong) antarjamaah haji.\n2. Menggunakan akad Tabarru' (hibah kebajikan) untuk menolong jamaah yang tertimpa musibah.\n3. Premi asuransi haji merupakan bagian dari komponen BPIH yang dipisahkan dari premi asuransi lainnya.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/asuransi-haji",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzQTZnaEJ4ZzZUOWs/view?usp=sharing&resourcekey=0-OoWOm3CeamAXSVUoKcFiMg",
     "tags": [
       "asuransi haji",
       "tabarru",
@@ -949,7 +949,7 @@ export const FATWA_PART1: FatwaItem[] = [
     "kaidah_fiqh": "[Kaidah Fiqhiyyah ]\nالأَصْلُ فِي الْمُعَامَلَاتِ الإِبَاحَةُ إِلاَّ أَنْ يَدُلَّ دَلِيلٌ عَلَى تَحْرِيمِهَا\nArtinya: \"Pada dasarnya, semua bentuk muamalah hukumnya adalah mubah (boleh) dilakukan kecuali ada dalil yang mengharamkannya.\"",
     "kalam_ulama": "Pedoman komprehensif penapisan emiten, instrumen pasar modal, serta larangan transaksi manipulatif (cornering, insider trading, short selling).",
     "ringkasan": "Pedoman Umum Pasar Modal Syariah:\n1. Pasar modal beserta mekanismenya dipandang sesuai syariah jika memenuhi prinsip syariah dan terbebas dari riba, gharar, maysir, ihtikar, dan najsy.\n2. Larangan transaksi terlarang: Short selling (jual kosong), Margin trading berbunga, Insider trading, dan Penawaran semu.\n3. Wajib ada Shariah Compliance Officer (SCO) dan Pernyataan Kesesuaian Syariah.",
-    "url_sumber": "https://tafsirq.com/fatwa/dsn-mui/pasar-modal-dan-pedoman-umum-penerapan-prinsip-syariah-di-bidang-pasar-modal",
+    "url_sumber": "https://drive.google.com/file/d/0BxTl-lNihFyzSm1BWGZaX19ZQjA/view?usp=sharing&resourcekey=0-sT-YbDfW6RZmAys2misV5w",
     "tags": [
       "pasar modal",
       "saham",

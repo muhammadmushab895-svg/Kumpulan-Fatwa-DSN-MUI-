@@ -173,17 +173,17 @@ Sumber Resmi: ${fatwa.url_sumber}
                 <span>Cetak</span>
               </button>
 
-              {/* Dokumen Resmi DSN-MUI */}
+              {/* Dokumen Resmi DSN-MUI (Google Drive) */}
               <a
                 id="link-official-source"
                 href={fatwa.url_sumber}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 hover:text-emerald-950 bg-emerald-100/90 hover:bg-emerald-200/90 p-1.5 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border border-emerald-300 transition-colors"
-                title="Buka Dokumen Resmi Asli DSN-MUI"
+                title="Buka Dokumen Asli Fatwa DSN-MUI (Google Drive PDF)"
               >
-                <span className="hidden md:inline">Dokumen Resmi</span>
-                <span className="hidden sm:inline md:hidden">Dokumen</span>
+                <span className="hidden md:inline">Dokumen Asli (GDrive)</span>
+                <span className="hidden sm:inline md:hidden">Dokumen GDrive</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
 

@@ -407,6 +407,9 @@ function generateHtml() {
             <button onclick="copyModalContent()" class="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70 border border-slate-200 bg-white" title="Salin Rujukan Fatwa">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
             </button>
+            <a id="modal-gdrive-btn" href="#" target="_blank" rel="noopener noreferrer" class="p-1.5 text-emerald-800 hover:text-emerald-950 rounded-lg hover:bg-emerald-100/70 border border-emerald-300 bg-emerald-50" title="Buka Dokumen Asli Fatwa DSN-MUI (Google Drive PDF)">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
             <button onclick="window.print()" class="hidden sm:inline-flex p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/70 border border-slate-200 bg-white" title="Cetak Fatwa">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
             </button>
@@ -1026,6 +1029,8 @@ function generateHtml() {
 
       document.getElementById('modal-judul').textContent = item.judul;
       document.getElementById('modal-ringkasan').textContent = item.ringkasan;
+      const gdriveBtn = document.getElementById('modal-gdrive-btn');
+      if (gdriveBtn) gdriveBtn.href = item.url_sumber;
 
       // Akads
       document.getElementById('modal-akads').innerHTML = item.akad.map(a => \`
