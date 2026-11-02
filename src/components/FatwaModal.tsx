@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   X, 
   Bookmark, 
@@ -13,10 +13,13 @@ import {
   Scroll,
   Quote,
   Sparkles,
-  FileText
+  FileText,
+  GraduationCap
 } from 'lucide-react';
 import { FatwaItem } from '../types';
 import { CATEGORIES } from '../data/categories';
+import { parseDalilText } from '../utils/dalilParser';
+import { DalilSection } from './DalilCard';
 
 interface FatwaModalProps {
   fatwa: FatwaItem | null;
@@ -41,6 +44,10 @@ export const FatwaModal: React.FC<FatwaModalProps> = ({
 }) => {
   const [copied, setCopied] = useState(false);
   const [activeTab, setActiveTab] = useState<'semua' | 'ringkasan' | 'quran' | 'hadits' | 'kaidah'>('ringkasan');
+
+  const quranBlocks = useMemo(() => parseDalilText(fatwa?.dalil_quran, 'quran'), [fatwa?.dalil_quran]);
+  const haditsBlocks = useMemo(() => parseDalilText(fatwa?.dalil_hadits, 'hadits'), [fatwa?.dalil_hadits]);
+  const kaidahBlocks = useMemo(() => parseDalilText(fatwa?.kaidah_fiqh, 'kaidah'), [fatwa?.kaidah_fiqh]);
 
   if (!fatwa) return null;
 
@@ -239,50 +246,51 @@ Sumber Resmi: ${fatwa.url_sumber}
 
           {/* TAB 2 / SEMUA: Dalil Al-Qur'an */}
           {(activeTab === 'quran' || activeTab === 'semua') && (
-            <section className="bg-emerald-50/50 p-5 sm:p-6 rounded-2xl border border-emerald-200/80">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-emerald-950 mb-3.5 flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-emerald-700" />
-                Landasan Dalil Al-Qur'an Al-Karim
-              </h3>
-              <div className="font-arabic text-xl sm:text-2xl text-slate-900 whitespace-pre-line leading-loose text-right bg-white p-5 rounded-xl border border-emerald-100/90 shadow-2xs mb-3">
-                {fatwa.dalil_quran}
-              </div>
-            </section>
+            <DalilSection
+              type="quran"
+              title="Landasan Dalil Al-Qur'an Al-Karim"
+              blocks={quranBlocks}
+              rawFallback={fatwa.dalil_quran}
+            />
           )}
 
           {/* TAB 3 / SEMUA: Dalil Hadits */}
           {(activeTab === 'hadits' || activeTab === 'semua') && (
-            <section className="bg-amber-50/50 p-5 sm:p-6 rounded-2xl border border-amber-200/80">
-              <h3 className="text-sm font-extrabold uppercase tracking-wider text-amber-950 mb-3.5 flex items-center gap-2">
-                <Scroll className="w-4 h-4 text-amber-700" />
-                Landasan Dalil As-Sunnah / Hadits Nabi SAW
-              </h3>
-              <div className="font-arabic text-xl sm:text-2xl text-slate-900 whitespace-pre-line leading-loose text-right bg-white p-5 rounded-xl border border-amber-100/90 shadow-2xs mb-3">
-                {fatwa.dalil_hadits}
-              </div>
-            </section>
+            <DalilSection
+              type="hadits"
+              title="Landasan Dalil As-Sunnah / Hadits Nabi SAW"
+              blocks={haditsBlocks}
+              rawFallback={fatwa.dalil_hadits}
+            />
           )}
 
           {/* TAB 4 / SEMUA: Kaidah Fiqhiyyah & Kalam Ulama */}
           {(activeTab === 'kaidah' || activeTab === 'semua') && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <section className="bg-indigo-50/50 p-5 rounded-2xl border border-indigo-200/80">
-                <h3 className="text-sm font-extrabold uppercase tracking-wider text-indigo-950 mb-3 flex items-center gap-2">
-                  <Scale className="w-4 h-4 text-indigo-700" />
-                  Kaidah Fiqhiyyah
-                </h3>
-                <div className="font-arabic text-lg sm:text-xl text-slate-900 whitespace-pre-line leading-loose text-right bg-white p-4 rounded-xl border border-indigo-100 shadow-2xs mb-2">
-                  {fatwa.kaidah_fiqh}
-                </div>
-              </section>
+            <div className="space-y-6">
+              <DalilSection
+                type="kaidah"
+                title="Landasan Kaidah Fiqhiyyah"
+                blocks={kaidahBlocks}
+                rawFallback={fatwa.kaidah_fiqh}
+              />
 
-              <section className="bg-teal-50/50 p-5 rounded-2xl border border-teal-200/80">
-                <h3 className="text-sm font-extrabold uppercase tracking-wider text-teal-950 mb-3 flex items-center gap-2">
-                  <Quote className="w-4 h-4 text-teal-700" />
-                  Pendapat Ulama & Ijtihad DSN
-                </h3>
-                <div className="text-sm text-slate-700 whitespace-pre-line leading-relaxed bg-white p-4 rounded-xl border border-teal-100 shadow-2xs">
-                  {fatwa.kalam_ulama}
+              <section className="bg-teal-50/50 p-5 sm:p-6 rounded-2xl border border-teal-200/80">
+                <div className="flex items-center justify-between mb-3.5 flex-wrap gap-2">
+                  <h3 className="text-sm font-extrabold uppercase tracking-wider text-teal-950 flex items-center gap-2">
+                    <GraduationCap className="w-4 h-4 text-teal-700" />
+                    <span>Pendapat Ulama, Fuqaha & Ijtihad DSN-MUI</span>
+                  </h3>
+                  <span className="text-xs font-semibold text-slate-500">
+                    Rujukan Fiqh Klasik & Kontemporer
+                  </span>
+                </div>
+                <div className="bg-white p-5 rounded-xl border border-teal-100 shadow-2xs">
+                  <div className="flex items-start gap-3">
+                    <Quote className="w-5 h-5 text-teal-600 shrink-0 mt-0.5 opacity-80" />
+                    <div className="text-sm sm:text-base text-slate-700 whitespace-pre-line leading-relaxed font-normal">
+                      {fatwa.kalam_ulama}
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>

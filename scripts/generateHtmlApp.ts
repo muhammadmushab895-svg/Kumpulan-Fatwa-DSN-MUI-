@@ -453,7 +453,7 @@ function generateHtml() {
             <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
             Landasan Dalil Al-Qur'an
           </h4>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/90 whitespace-pre-line font-arabic text-lg sm:text-xl text-slate-900 leading-loose text-right" id="modal-dalil-quran" dir="rtl"></div>
+          <div class="space-y-3" id="modal-dalil-quran"></div>
         </div>
 
         <!-- Dalil Hadits -->
@@ -462,7 +462,7 @@ function generateHtml() {
             <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
             Landasan Dalil Hadits & Sunnah
           </h4>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/90 whitespace-pre-line font-arabic text-lg sm:text-xl text-slate-900 leading-loose text-right" id="modal-dalil-hadits" dir="rtl"></div>
+          <div class="space-y-3" id="modal-dalil-hadits"></div>
         </div>
 
         <!-- Kaidah Fiqhiyyah -->
@@ -471,7 +471,7 @@ function generateHtml() {
             <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             Kaidah Fiqhiyyah Muamalah
           </h4>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/90 whitespace-pre-line font-arabic text-base sm:text-lg text-slate-900 leading-relaxed text-right" id="modal-kaidah-fiqh" dir="rtl"></div>
+          <div class="space-y-3" id="modal-kaidah-fiqh"></div>
         </div>
 
         <!-- Pendapat Ulama -->
@@ -942,6 +942,64 @@ function generateHtml() {
       }
     }
 
+    function renderDalilCards(rawText, type) {
+      if (!rawText || !rawText.trim()) {
+        return '<div class="p-3 bg-white rounded-xl border border-slate-200 text-xs text-slate-500 italic">Tidak ada dalil khusus tertulis.</div>';
+      }
+      const chunks = rawText.replace(/\r\n/g, '\n').trim().split(/\n\s*\n+/);
+      return chunks.map(function(chunk, idx) {
+        const lines = chunk.split('\n').map(function(l) { return l.trim(); }).filter(Boolean);
+        if (lines.length === 0) return '';
+        let reference = '';
+        const arabicLines = [];
+        const transLines = [];
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          const isBracketRef = /^\[.+\]$/.test(line);
+          const isHeaderRef = /^(QS\.|Surat|Hadits|HR\.|Riwayat|Kaidah|Ijma'|Qiyas)/i.test(line);
+          const hasArabic = /[\u0600-\u06FF]/.test(line);
+          const isExplicitTrans = /^(Artinya\s*:?|Terjemahan\s*:?|Makna\s*:?)/i.test(line);
+
+          if ((isBracketRef || (isHeaderRef && !hasArabic)) && !reference && arabicLines.length === 0) {
+            reference = line.replace(/^\[\s*|\s*\]$/g, '').trim();
+          } else if (isExplicitTrans) {
+            transLines.push(line.replace(/^(Artinya\s*:?|Terjemahan\s*:?|Makna\s*:?)\s*/i, '').replace(/^"|"$/g, '').trim());
+          } else if (hasArabic) {
+            arabicLines.push(line);
+          } else if (transLines.length > 0) {
+            transLines.push(line.replace(/^"|"$/g, '').trim());
+          } else if (line.startsWith('"') || (arabicLines.length > 0 && !hasArabic)) {
+            transLines.push(line.replace(/^"|"$/g, '').trim());
+          } else {
+            if (!reference && idx === 0 && lines.length === 1) reference = line;
+            else transLines.push(line);
+          }
+        }
+        const arabic = arabicLines.join('\n').trim();
+        const translation = transLines.join(' ').trim();
+        const defaultRef = type === 'quran' ? "Al-Qur'an Al-Karim" : (type === 'hadits' ? 'Hadits Nabi SAW' : 'Kaidah Fiqhiyyah');
+        const badgeColor = type === 'quran' ? 'bg-emerald-100 text-emerald-900 border-emerald-300' : (type === 'hadits' ? 'bg-amber-100 text-amber-900 border-amber-300' : 'bg-indigo-100 text-indigo-900 border-indigo-300');
+        const transBg = type === 'quran' ? 'bg-emerald-50/70 border-emerald-200/70' : (type === 'hadits' ? 'bg-amber-50/70 border-amber-200/70' : 'bg-indigo-50/70 border-indigo-200/70');
+        const labelColor = type === 'quran' ? 'text-emerald-800' : (type === 'hadits' ? 'text-amber-800' : 'text-indigo-800');
+
+        let html = '<div class="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs mb-3">';
+        html += '<div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-100">';
+        html += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-bold border ' + badgeColor + '">' + (reference || defaultRef) + '</span>';
+        html += '</div>';
+        if (arabic) {
+          html += '<div dir="rtl" class="font-arabic text-xl sm:text-2xl text-slate-900 leading-loose text-right mb-3 py-1 select-all">' + arabic + '</div>';
+        }
+        if (translation) {
+          html += '<div dir="ltr" class="' + transBg + ' p-3 rounded-xl border text-xs sm:text-sm text-slate-800 text-left">';
+          html += '<span class="text-[11px] font-bold uppercase tracking-wider ' + labelColor + ' block mb-1">Terjemahan:</span>';
+          html += '<p class="italic font-normal">"' + translation + '"</p>';
+          html += '</div>';
+        }
+        html += '</div>';
+        return html;
+      }).join('');
+    }
+
     // Detail Modal
     function openDetailModal(no) {
       const item = RAW_FATWAS.find(f => f.no === no);
@@ -971,11 +1029,11 @@ function generateHtml() {
       \`).join('');
 
       // Dalil Quran
-      document.getElementById('modal-dalil-quran').textContent = item.dalil_quran || 'Tidak ada dalil khusus tertulis.';
+      document.getElementById('modal-dalil-quran').innerHTML = renderDalilCards(item.dalil_quran, 'quran');
       // Dalil Hadits
-      document.getElementById('modal-dalil-hadits').textContent = item.dalil_hadits || 'Tidak ada dalil khusus tertulis.';
+      document.getElementById('modal-dalil-hadits').innerHTML = renderDalilCards(item.dalil_hadits, 'hadits');
       // Kaidah Fiqih
-      document.getElementById('modal-kaidah-fiqh').textContent = item.kaidah_fiqh || 'Tidak ada kaidah khusus tertulis.';
+      document.getElementById('modal-kaidah-fiqh').innerHTML = renderDalilCards(item.kaidah_fiqh, 'kaidah');
       // Kalam Ulama
       document.getElementById('modal-kalam-ulama').textContent = item.kalam_ulama || 'Rujukan ijma dan qiyas dari para imam mazhab.';
 
