@@ -72,14 +72,14 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   };
 
   return (
-    <div className="w-full space-y-4">
+    <div className="w-full max-w-full space-y-4">
       {/* Era / Periode Quick Filter */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+      <div className="flex items-center gap-2 overflow-x-auto pb-1.5 scrollbar-none w-full max-w-full">
         <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 shrink-0 pl-0.5">
           <Clock className="w-3.5 h-3.5 text-teal-600" />
           Periode:
         </span>
-        <div className="flex items-center gap-1.5 flex-nowrap">
+        <div className="flex items-center gap-1.5 flex-nowrap shrink-0">
           {ERAS.map((era) => {
             const isSelected = selectedEra === era.id;
             return (
@@ -123,7 +123,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
         <button
           id="btn-cat-all"
           onClick={() => onSelectCategory('Semua')}
-          className={`group flex items-center justify-between p-3.5 rounded-2xl border text-left transition-all ${
+          className={`group flex items-center justify-between p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl border text-left transition-all ${
             selectedCategory === 'Semua'
               ? 'bg-slate-900 text-white border-slate-900 shadow-md ring-2 ring-slate-900/10'
               : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/30 shadow-2xs'
@@ -154,7 +154,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
               key={cat.id}
               id={`btn-cat-${cat.id}`}
               onClick={() => onSelectCategory(cat.name)}
-              className={`group flex items-center justify-between p-3.5 rounded-2xl border text-left transition-all ${
+              className={`group flex items-center justify-between p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl border text-left transition-all ${
                 isSelected
                   ? 'bg-emerald-700 text-white border-emerald-700 shadow-md ring-2 ring-emerald-600/20'
                   : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/30 shadow-2xs'

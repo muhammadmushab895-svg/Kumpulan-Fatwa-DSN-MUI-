@@ -102,14 +102,14 @@ export const DalilSection: React.FC<DalilSectionProps> = ({
             >
               {/* Header: Reference Badge & Individual Copy */}
               <div className="flex items-center justify-between gap-2 mb-3 border-b border-slate-100 pb-2.5">
-                <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-lg border ${theme.badgeBg}`}>
-                  <Icon className="w-3.5 h-3.5" />
-                  <span>{block.reference || (type === 'quran' ? "Al-Qur'an" : 'Hadits')}</span>
+                <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-lg border max-w-[80%] ${theme.badgeBg}`}>
+                  <Icon className="w-3.5 h-3.5 shrink-0" />
+                  <span className="break-words line-clamp-1 sm:line-clamp-none">{block.reference || (type === 'quran' ? "Al-Qur'an" : 'Hadits')}</span>
                 </span>
 
                 <button
                   onClick={() => handleCopy(block.id, fullCopyText)}
-                  className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-500 hover:text-slate-800 bg-slate-50 hover:bg-slate-100 px-2 py-1 rounded-md border border-slate-200 transition-colors"
+                  className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-500 hover:text-slate-800 bg-slate-50 hover:bg-slate-100 px-2 py-1 rounded-md border border-slate-200 transition-colors shrink-0"
                   title="Salin teks Arab dan terjemahan"
                 >
                   {isCopied ? (
@@ -130,7 +130,7 @@ export const DalilSection: React.FC<DalilSectionProps> = ({
               {block.arabic && (
                 <div
                   dir="rtl"
-                  className="font-arabic text-xl sm:text-2xl text-slate-900 leading-loose text-right mb-3.5 py-1 px-2 select-all tracking-wide"
+                  className="font-arabic text-lg sm:text-2xl text-slate-900 leading-loose text-right mb-3.5 py-1 px-1 sm:px-2 select-all tracking-wide break-words max-w-full"
                 >
                   {block.arabic}
                 </div>
@@ -140,7 +140,7 @@ export const DalilSection: React.FC<DalilSectionProps> = ({
               {block.translation && (
                 <div
                   dir="ltr"
-                  className={`${theme.transBg} p-3.5 rounded-xl border text-sm sm:text-base leading-relaxed text-left`}
+                  className={`${theme.transBg} p-3 sm:p-3.5 rounded-xl border text-xs sm:text-base leading-relaxed text-left break-words max-w-full`}
                 >
                   <div className="flex items-start gap-2">
                     <Quote className={`w-4 h-4 ${theme.labelColor} shrink-0 mt-0.5 opacity-80`} />

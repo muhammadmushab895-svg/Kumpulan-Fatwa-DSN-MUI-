@@ -313,22 +313,22 @@ Sumber Resmi: ${fatwa.url_sumber}
         </div>
 
         {/* Modal Footer with Previous / Next Navigation */}
-        <div className="p-4 sm:p-5 border-t border-slate-200 bg-slate-50 flex items-center justify-between text-xs sm:text-sm">
+        <div className="p-3.5 sm:p-5 border-t border-slate-200 bg-slate-50 flex items-center justify-between gap-2 text-xs sm:text-sm">
           <button
             id="btn-prev-fatwa"
             onClick={onPrevFatwa}
             disabled={!hasPrev}
-            className={`inline-flex items-center gap-1.5 px-3.5 py-2 font-bold rounded-xl border transition-all ${
+            className={`inline-flex items-center gap-1 sm:gap-1.5 px-3 py-2 sm:px-3.5 sm:py-2 font-bold rounded-xl border transition-all text-xs sm:text-sm ${
               hasPrev
                 ? 'bg-white text-slate-700 hover:text-emerald-800 hover:border-emerald-300 border-slate-200 shadow-2xs'
                 : 'bg-slate-100 text-slate-400 border-transparent cursor-not-allowed'
             }`}
           >
-            <ChevronLeft className="w-4 h-4" />
-            <span>Sebelumnya (←)</span>
+            <ChevronLeft className="w-4 h-4 shrink-0" />
+            <span>Sebelumnya</span>
           </button>
 
-          <span className="text-slate-500 font-semibold text-xs">
+          <span className="hidden md:inline text-slate-500 font-semibold text-xs text-center">
             Gunakan tombol panah keyboard (← / →) untuk navigasi
           </span>
 
@@ -336,14 +336,14 @@ Sumber Resmi: ${fatwa.url_sumber}
             id="btn-next-fatwa"
             onClick={onNextFatwa}
             disabled={!hasNext}
-            className={`inline-flex items-center gap-1.5 px-3.5 py-2 font-bold rounded-xl border transition-all ${
+            className={`inline-flex items-center gap-1 sm:gap-1.5 px-3 py-2 sm:px-3.5 sm:py-2 font-bold rounded-xl border transition-all text-xs sm:text-sm ${
               hasNext
                 ? 'bg-emerald-700 text-white hover:bg-emerald-800 border-emerald-700 shadow-xs'
                 : 'bg-slate-100 text-slate-400 border-transparent cursor-not-allowed'
             }`}
           >
-            <span>Selanjutnya (→)</span>
-            <ChevronRight className="w-4 h-4" />
+            <span>Selanjutnya</span>
+            <ChevronRight className="w-4 h-4 shrink-0" />
           </button>
         </div>
 

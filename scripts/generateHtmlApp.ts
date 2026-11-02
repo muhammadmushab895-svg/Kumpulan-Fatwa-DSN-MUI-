@@ -157,7 +157,7 @@ function generateHtml() {
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-100 selection:text-emerald-900 min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-100 selection:text-emerald-900 min-h-screen flex flex-col overflow-x-hidden w-full max-w-full">
 
   <!-- Header & Navbar -->
   <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
@@ -201,7 +201,7 @@ function generateHtml() {
             <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
             </svg>
-            <span class="font-semibold">Ekspor Data</span>
+            <span class="font-semibold hidden sm:inline">Ekspor Data</span>
           </button>
 
           <!-- Favorit -->
