@@ -11,7 +11,10 @@ import {
   RotateCcw,
   SlidersHorizontal,
   ChevronDown,
-  ExternalLink
+  ExternalLink,
+  ShieldCheck,
+  CheckCircle2,
+  Download
 } from 'lucide-react';
 
 import { ALL_FATWA, ALL_YEARS, ALL_AKADS } from './data/allFatwa';
@@ -37,6 +40,7 @@ export default function App() {
     kategori: 'Semua',
     tahun: 'Semua',
     akad: 'Semua',
+    era: 'Semua',
     sortBy: 'nomor_desc',
     favoriteOnly: false,
   });
@@ -109,24 +113,37 @@ export default function App() {
       result = result.filter((f) => f.kategori === filters.kategori);
     }
 
-    // 3. Tahun filter
+    // 3. Era / Periode filter
+    if (filters.era && filters.era !== 'Semua') {
+      if (filters.era === '2024-2026') {
+        result = result.filter((f) => Number(f.tahun) >= 2024 && Number(f.tahun) <= 2026);
+      } else if (filters.era === '2018-2023') {
+        result = result.filter((f) => Number(f.tahun) >= 2018 && Number(f.tahun) <= 2023);
+      } else if (filters.era === '2010-2017') {
+        result = result.filter((f) => Number(f.tahun) >= 2010 && Number(f.tahun) <= 2017);
+      } else if (filters.era === '2000-2009') {
+        result = result.filter((f) => Number(f.tahun) >= 2000 && Number(f.tahun) <= 2009);
+      }
+    }
+
+    // 4. Tahun filter
     if (filters.tahun !== 'Semua') {
       result = result.filter((f) => f.tahun === filters.tahun);
     }
 
-    // 4. Akad filter
+    // 5. Akad filter
     if (filters.akad !== 'Semua') {
       result = result.filter((f) =>
         f.akad.some((a) => a.toLowerCase().includes(filters.akad.toLowerCase()))
       );
     }
 
-    // 5. Favorite filter
+    // 6. Favorite filter
     if (filters.favoriteOnly) {
       result = result.filter((f) => favorites.includes(f.no));
     }
 
-    // 6. Sorting
+    // 7. Sorting
     result.sort((a, b) => {
       switch (filters.sortBy) {
         case 'nomor_asc':
@@ -161,6 +178,7 @@ export default function App() {
   const activeFilterCount = useMemo(() => {
     let count = 0;
     if (filters.kategori !== 'Semua') count++;
+    if (filters.era !== 'Semua') count++;
     if (filters.tahun !== 'Semua') count++;
     if (filters.akad !== 'Semua') count++;
     if (filters.favoriteOnly) count++;
@@ -174,6 +192,7 @@ export default function App() {
       kategori: 'Semua',
       tahun: 'Semua',
       akad: 'Semua',
+      era: 'Semua',
       sortBy: 'nomor_desc',
       favoriteOnly: false,
     });
@@ -219,7 +238,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans selection:bg-emerald-200 selection:text-emerald-950">
       
       {/* Top Navigation Bar */}
       <Navbar
@@ -232,20 +251,32 @@ export default function App() {
         totalFatwa={ALL_FATWA.length}
       />
 
-      {/* Hero Header & Search Section */}
-      <section className="bg-gradient-to-b from-white via-slate-50 to-slate-100 border-b border-slate-200/80 pt-8 pb-10 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      {/* Hero Header & Search Section (Modern Islamic Aesthetic) */}
+      <section className="relative bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 text-white border-b border-emerald-900/50 pt-10 sm:pt-14 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Subtle decorative glowing background blur circles */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative z-10">
           
-          <div className="text-center max-w-3xl mx-auto mb-7">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold mb-3 shadow-2xs">
-              <Scale className="w-3.5 h-3.5 text-emerald-600" />
-              <span>Kompilasi Resmi Fatwa DSN-MUI (2000 — 2026)</span>
+          <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            {/* Pill Header Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-bold mb-4 backdrop-blur-md shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <span>Database Terlengkap: 169 Fatwa Resmi DSN-MUI (2000 — 2026)</span>
             </div>
-            <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Pencarian Cepat & Kategori Fatwa DSN-MUI
+
+            {/* Main Title */}
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-white">
+              Kompilasi Lengkap Fatwa <br className="hidden sm:inline" />
+              <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-200 bg-clip-text text-transparent">
+                Dewan Syariah Nasional MUI
+              </span>
             </h1>
-            <p className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed">
-              Akses cepat ketentuan hukum, dalil Al-Qur'an & Hadits, kaidah fiqhiyyah, serta integrasi ekspor data ke Google Sheets.
+
+            {/* Description */}
+            <p className="mt-3.5 text-sm sm:text-base text-emerald-100/80 leading-relaxed max-w-2xl mx-auto font-normal">
+              Eksplorasi seluruh ketetapan fatwa perbankan, pasar modal, fintech, dan muamalah kontemporer Indonesia dilengkapi teks dalil Al-Qur'an, Hadits, kaidah fiqhiyyah, serta integrasi Google Sheets.
             </p>
           </div>
 
@@ -272,12 +303,14 @@ export default function App() {
       </section>
 
       {/* Main Content Area */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 flex-1 w-full space-y-6">
         
-        {/* Category Filter Pills / Grid */}
+        {/* Category & Era Filter */}
         <CategoryFilter
           selectedCategory={filters.kategori}
           onSelectCategory={(cat) => setFilters((prev) => ({ ...prev, kategori: cat }))}
+          selectedEra={filters.era}
+          onSelectEra={(era) => setFilters((prev) => ({ ...prev, era }))}
           fatwaList={ALL_FATWA}
         />
 
@@ -296,7 +329,7 @@ export default function App() {
         {/* Fatwa Cards Container */}
         {filteredFatwas.length > 0 ? (
           <div>
-            <div className={viewMode === 'grid' ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5' : 'space-y-3'}>
+            <div className={viewMode === 'grid' ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6' : 'space-y-3 sm:space-y-4'}>
               {displayedFatwas.map((fatwa) => (
                 <FatwaCard
                   key={fatwa.no}
@@ -312,33 +345,33 @@ export default function App() {
 
             {/* Load More Pagination */}
             {visibleCount < filteredFatwas.length && (
-              <div className="mt-10 text-center">
+              <div className="mt-12 text-center">
                 <button
                   id="btn-load-more"
                   onClick={() => setVisibleCount((prev) => prev + ITEMS_PER_PAGE)}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 text-slate-800 font-bold rounded-2xl border border-slate-200 shadow-xs hover:border-emerald-300 transition-all text-sm group"
+                  className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-white hover:bg-emerald-50/70 text-slate-900 font-extrabold rounded-2xl border border-slate-200 shadow-sm hover:border-emerald-300 transition-all text-sm group"
                 >
-                  <span>Tampilkan Lebih Banyak ({filteredFatwas.length - visibleCount} lagi)</span>
-                  <ChevronDown className="w-4 h-4 text-emerald-600 group-hover:translate-y-0.5 transition-transform" />
+                  <span>Tampilkan Lebih Banyak ({filteredFatwas.length - visibleCount} fatwa lagi)</span>
+                  <ChevronDown className="w-4 h-4 text-emerald-700 group-hover:translate-y-1 transition-transform" />
                 </button>
               </div>
             )}
           </div>
         ) : (
           /* Empty Search State */
-          <div className="text-center py-16 bg-white rounded-3xl border border-slate-200 p-8 shadow-xs max-w-lg mx-auto">
-            <div className="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto mb-4 border border-amber-200">
-              <Search className="w-7 h-7" />
+          <div className="text-center py-16 sm:py-20 bg-white rounded-3xl border border-slate-200 p-8 shadow-xs max-w-lg mx-auto">
+            <div className="w-16 h-16 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto mb-4 border border-amber-200">
+              <Search className="w-8 h-8" />
             </div>
-            <h3 className="text-lg font-bold text-slate-900 mb-1">
+            <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-2">
               Tidak Ada Fatwa Ditemukan
             </h3>
-            <p className="text-xs sm:text-sm text-slate-500 mb-5 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-500 mb-6 leading-relaxed">
               Tidak ada fatwa yang cocok dengan kriteria pencarian &ldquo;{searchQuery}&rdquo; atau kombinasi filter saat ini.
             </p>
             <button
               onClick={handleResetFilters}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white text-xs sm:text-sm font-bold rounded-xl shadow-xs transition-colors"
             >
               <RotateCcw className="w-4 h-4" />
               <span>Reset Semua Filter</span>
@@ -352,7 +385,7 @@ export default function App() {
       <button
         id="btn-scroll-top"
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-20 p-3 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white shadow-lg shadow-emerald-700/30 hover:scale-105 active:scale-95 transition-all"
+        className="fixed bottom-6 right-6 z-20 p-3.5 rounded-2xl bg-emerald-800 hover:bg-emerald-900 text-white shadow-xl shadow-emerald-950/25 hover:scale-105 active:scale-95 transition-all border border-emerald-700"
         title="Kembali ke atas"
         aria-label="Kembali ke atas"
       >
@@ -397,34 +430,43 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200/80 py-8 px-4 sm:px-6 lg:px-8 mt-12">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div className="flex items-center gap-2">
-            <Scale className="w-4 h-4 text-emerald-600" />
-            <span>Kumpulan Fatwa DSN-MUI — Referensi Fikih Muamalah Indonesia</span>
+      <footer className="bg-white border-t border-slate-200/80 py-10 px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-800 flex items-center justify-center border border-emerald-200 shrink-0">
+              <Scale className="w-4 h-4" />
+            </div>
+            <div>
+              <div className="font-bold text-slate-800">
+                Kumpulan Fatwa DSN-MUI (2000 — 2026)
+              </div>
+              <div>Dewan Syariah Nasional — Majelis Ulama Indonesia</div>
+            </div>
           </div>
-          <div className="flex flex-wrap items-center gap-4">
+
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <button
               onClick={() => setIsHtmlModalOpen(true)}
-              className="hover:text-emerald-800 transition-colors font-bold text-emerald-700 inline-flex items-center gap-1"
+              className="hover:text-emerald-800 transition-colors font-bold text-emerald-700 inline-flex items-center gap-1.5"
             >
-              <span>Aplikasi HTML (Offline)</span>
+              <Download className="w-3.5 h-3.5" />
+              <span>Aplikasi Offline (HTML)</span>
             </button>
             <button
               onClick={() => setIsGlossaryOpen(true)}
-              className="hover:text-emerald-700 transition-colors"
+              className="hover:text-emerald-800 transition-colors font-medium text-slate-700"
             >
               Kamus Akad
             </button>
             <button
               onClick={() => setIsSheetsOpen(true)}
-              className="hover:text-emerald-700 transition-colors font-semibold text-emerald-800"
+              className="hover:text-emerald-800 transition-colors font-bold text-teal-800"
             >
               Ekspor Google Sheets
             </button>
             <button
               onClick={() => setIsAboutOpen(true)}
-              className="hover:text-emerald-700 transition-colors"
+              className="hover:text-emerald-800 transition-colors font-medium text-slate-700"
             >
               Tentang DSN-MUI
             </button>
@@ -432,7 +474,7 @@ export default function App() {
               href="https://dsnmui.or.id"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-slate-600 hover:text-emerald-700"
+              className="inline-flex items-center gap-1 text-slate-700 hover:text-emerald-800 font-medium"
             >
               <span>dsnmui.or.id</span>
               <ExternalLink className="w-3 h-3" />

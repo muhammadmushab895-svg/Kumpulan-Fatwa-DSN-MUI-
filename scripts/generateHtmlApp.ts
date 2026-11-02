@@ -125,7 +125,7 @@ function generateHtml() {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aplikasi Kumpulan Fatwa DSN-MUI (Offline Mandiri)</title>
-  <meta name="description" content="Koleksi komprehensif 146+ Fatwa Dewan Syariah Nasional Majelis Ulama Indonesia dengan pencarian dalil Quran, Hadits, Kaidah Fiqih, dan Kamus Akad.">
+  <meta name="description" content="Koleksi komprehensif 169 Fatwa Dewan Syariah Nasional Majelis Ulama Indonesia dengan pencarian dalil Quran, Hadits, Kaidah Fiqih, dan Kamus Akad.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -177,7 +177,7 @@ function generateHtml() {
                 Fatwa DSN-MUI
               </h1>
               <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                146 Fatwa (Aplikasi HTML Mandiri)
+                ${ALL_FATWA.length} Fatwa (Aplikasi HTML Mandiri)
               </span>
             </div>
             <p class="text-xs text-slate-500 font-medium hidden sm:block">
@@ -237,14 +237,14 @@ function generateHtml() {
         Ensiklopedia & Direktori Fatwa DSN-MUI
       </h2>
       <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
-        Koleksi lengkap 146 fatwa muamalah & keuangan syariah lengkap dengan dalil Al-Qur'an, Hadits, Kaidah Fiqhiyyah, dan Diktum Hukum.
+        Koleksi lengkap ${ALL_FATWA.length} fatwa muamalah & keuangan syariah lengkap dengan dalil Al-Qur'an, Hadits, Kaidah Fiqhiyyah, dan Diktum Hukum.
       </p>
 
       <!-- Stat Badges -->
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto mt-6 text-left">
         <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
           <p class="text-xs text-slate-500 font-medium">Total Fatwa</p>
-          <p class="text-xl sm:text-2xl font-bold text-slate-900">146 Fatwa</p>
+          <p class="text-xl sm:text-2xl font-bold text-slate-900">${ALL_FATWA.length} Fatwa</p>
           <p class="text-[11px] text-emerald-600 font-medium mt-0.5">Tahun 2000 - 2024</p>
         </div>
         <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
@@ -350,7 +350,7 @@ function generateHtml() {
 
       <!-- Result Counter -->
       <div class="text-slate-600 font-medium" id="results-count-text">
-        Menampilkan 146 fatwa
+        Menampilkan ${ALL_FATWA.length} fatwa
       </div>
     </div>
 
@@ -537,10 +537,10 @@ function generateHtml() {
         
         <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
           <h4 class="font-bold text-emerald-900 mb-1">Unduh Format CSV (Excel & Google Sheets)</h4>
-          <p class="text-xs text-emerald-800 mb-3">File CSV ini berisi seluruh 146 fatwa (Nomor, Tahun, Kategori, Judul, Akad, Ringkasan) yang dapat langsung Anda buka di Microsoft Excel atau Google Sheets.</p>
+          <p class="text-xs text-emerald-800 mb-3">File CSV ini berisi seluruh ${ALL_FATWA.length} fatwa (Nomor, Tahun, Kategori, Judul, Akad, Ringkasan) yang dapat langsung Anda buka di Microsoft Excel atau Google Sheets.</p>
           <button onclick="downloadCSV()" class="px-4 py-2 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 text-xs inline-flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-            Unduh CSV (146 Fatwa)
+            Unduh CSV (${ALL_FATWA.length} Fatwa)
           </button>
         </div>
 

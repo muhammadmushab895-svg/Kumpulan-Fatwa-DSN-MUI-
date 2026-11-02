@@ -40,6 +40,7 @@ export interface FilterState {
   kategori: string;
   tahun: string;
   akad: string;
+  era: string;
   sortBy: 'nomor_desc' | 'nomor_asc' | 'tahun_desc' | 'tahun_asc' | 'judul_asc';
   favoriteOnly: boolean;
 }
